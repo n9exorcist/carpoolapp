@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { OfferRideComponent } from './offer-ride/offer-ride.component';
 import { RideDetailsComponent } from './ride-details/ride-details.component';
 import { UpdateRideComponent } from './update-ride/update-ride.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UpdateRideComponent } from './update-ride/update-ride.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

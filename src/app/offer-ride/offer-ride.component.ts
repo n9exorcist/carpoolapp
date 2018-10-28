@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RestService } from 'src/app/rest.service';
+import { Ride } from '../ride';
 
 @Component({
   selector: 'app-offer-ride',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferRideComponent implements OnInit {
 
-  constructor() { }
+  render: boolean = true;
+  welcome: string;
+  rides: Ride[];
+
+  constructor(private _rest: RestService) { }
 
   ngOnInit() {
+    this.getRides();
+  }
+
+  getRides() {
+    this._rest.getRides().subscribe(
+      ridez => this.rides = ridez
+    )
   }
 
 }

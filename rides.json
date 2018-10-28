@@ -1,9 +1,28 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Olsen",
+      "startlocation": "Halmstad",
+      "destination": "Lund",
+      "car": "Volvo",
+      "seatsavailable": 6,
+      "id": 1
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 2
+    },
+    {
+      "name": "Henrik",
+      "startlocation": "Halmstad",
+      "destination": "Gothenberg",
+      "car": "BMW",
+      "seatsavailable": 2,
+      "id": 3
     }
   ],
   "comments": [
