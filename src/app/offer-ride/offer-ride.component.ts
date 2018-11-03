@@ -12,6 +12,7 @@ export class OfferRideComponent implements OnInit {
   render: boolean = true;
   welcome: string;
   rides: Ride[];
+  showallrides: boolean = true;
 
   constructor(private _rest: RestService) { }
 
@@ -23,6 +24,11 @@ export class OfferRideComponent implements OnInit {
     this._rest.getRides().subscribe(
       ridez => this.rides = ridez
     )
+  }
+
+  toggle() {
+    this.showallrides = !this.showallrides;
+    console.log("toggled");
   }
 
 }

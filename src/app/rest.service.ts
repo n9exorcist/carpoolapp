@@ -28,5 +28,10 @@ export class RestService {
     )
   }
 
+  addRide(ride: Ride): Observable<Ride> {
+    return this.http.post<Ride>(this.ridesURL, ride, httpOptions).pipe(
+      tap(data => console.log('Data fetched through post():' + JSON.stringify(data)))
+    )
+  }
 
 }
