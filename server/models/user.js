@@ -2,12 +2,12 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 const userSchema = new Schema({
-    name: String,
-    startLocation: String,
-    destination: String,
-    car: String,
-    seatsAvailable: Number
+      name: String,
+      startloc: String,
+      destination: String,
+      car: String,
+      seatsavail: Number
 })
 
-module.exports = mongoose.models('user', userSchema, 'rides')
+module.exports = mongoose.model('user', userSchema, 'rides')
 // 'rides' from db collection name 
