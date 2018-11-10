@@ -12,7 +12,8 @@ export class OfferRideComponent implements OnInit {
   render: boolean = true;
   welcome: string;
   rides: Ride[];
-  showallrides: boolean = true;
+  showallrides: boolean = false;
+  isButtonVisible: boolean = true;
 
   constructor(private _rest: RestService) { }
 
