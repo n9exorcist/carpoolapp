@@ -9,10 +9,9 @@ import { Ride } from '../ride';
 })
 export class OfferRideComponent implements OnInit {
 
-  render: boolean = true;
   welcome: string;
   rides: Ride[];
-  showallrides: boolean = false;
+  // rides is the variable whcih will be binded in the html file. 
   isButtonVisible: boolean = true;
 
   constructor(private _rest: RestService) { }
@@ -23,13 +22,9 @@ export class OfferRideComponent implements OnInit {
 
   getRides() {
     this._rest.getRides().subscribe(
-      ridez => this.rides = ridez
+      res => this.rides = res
+      //rides variable will be used for subscribing the values which we return as an Obervable from rest service
     )
-  }
-
-  toggle() {
-    this.showallrides = !this.showallrides;
-    console.log("toggled");
   }
 
 }

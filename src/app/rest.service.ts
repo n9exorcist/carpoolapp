@@ -19,8 +19,6 @@ export class RestService {
    }
 
   private ridesURL;
-  public id: number;
-  public ride: Ride[]; 
 
   getRides(): Observable<Ride[]> {
     return this.http.get<Ride[]>(this.ridesURL).pipe(
