@@ -11,6 +11,7 @@ export class OfferRideComponent implements OnInit {
 
   welcome: string;
   rides: Ride[];
+  id: number;
   // rides is the variable whcih will be binded in the html file. 
   isButtonVisible: boolean = true;
 
@@ -18,12 +19,25 @@ export class OfferRideComponent implements OnInit {
 
   ngOnInit() {
     this.getRides();
+    
   }
 
   getRides() {
     this._rest.getRides().subscribe(
       res => this.rides = res
       //rides variable will be used for subscribing the values which we return as an Obervable from rest service
+    )
+  }
+
+  deleteRow(id) {
+    this._rest.deleteRide(id).subscribe(
+      res => this.getRides()
+    )
+  }
+
+  updateRow(rides, id) {
+    this._rest.updateRide(rides, this.id).subscribe(
+      
     )
   }
 

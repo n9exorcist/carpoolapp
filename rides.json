@@ -1,11 +1,11 @@
 {
   "posts": [
     {
-      "name": "Olsen",
-      "startlocation": "Halmstad",
-      "destination": "Lund",
-      "car": "Volvo",
-      "seatsavailable": 6,
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
       "id": 1
     },
     {
@@ -17,21 +17,63 @@
       "id": 2
     },
     {
-      "name": "Henrik",
-      "startlocation": "Halmstad",
-      "destination": "Gothenberg",
-      "car": "BMW",
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
       "seatsavailable": 2,
       "id": 3
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 4
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 5
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 6
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 7
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 8
+    },
+    {
+      "name": "Maria",
+      "startlocation": "Lund",
+      "destination": "Halmstad",
+      "car": "Saab",
+      "seatsavailable": 2,
+      "id": 9
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
