@@ -8,6 +8,7 @@ import { UpdateRideComponent } from 'src/app/update-ride/update-ride.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'offer-ride', component: OfferRideComponent },
+  { path: 'offer-ride/:id', component: OfferRideComponent },
   { path: 'ride-details', component: RideDetailsComponent },
   { path: 'update-ride/:id', component: UpdateRideComponent },
   { path: 'update-ride', component: UpdateRideComponent },

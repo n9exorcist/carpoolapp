@@ -31,46 +31,6 @@
       "car": "Saab",
       "seatsavailable": 2,
       "id": 4
-    },
-    {
-      "name": "Maria",
-      "startlocation": "Lund",
-      "destination": "Halmstad",
-      "car": "Saab",
-      "seatsavailable": 2,
-      "id": 5
-    },
-    {
-      "name": "Maria",
-      "startlocation": "Lund",
-      "destination": "Halmstad",
-      "car": "Saab",
-      "seatsavailable": 2,
-      "id": 6
-    },
-    {
-      "name": "Maria",
-      "startlocation": "Lund",
-      "destination": "Halmstad",
-      "car": "Saab",
-      "seatsavailable": 2,
-      "id": 7
-    },
-    {
-      "name": "Maria",
-      "startlocation": "Lund",
-      "destination": "Halmstad",
-      "car": "Saab",
-      "seatsavailable": 2,
-      "id": 8
-    },
-    {
-      "name": "Maria",
-      "startlocation": "Lund",
-      "destination": "Halmstad",
-      "car": "Saab",
-      "seatsavailable": 2,
-      "id": 9
     }
   ],
   "comments": [],

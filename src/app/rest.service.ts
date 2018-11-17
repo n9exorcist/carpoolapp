@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type':'application/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 
 @Injectable({
@@ -15,7 +15,7 @@ const httpOptions = {
 export class RestService {
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
-    this.ridesURL = 'http://localhost:3000/posts'
+    this.ridesURL = 'http://localhost:3000/posts';
    }
 
   private ridesURL;
@@ -26,27 +26,30 @@ export class RestService {
   getRides(): Observable<Ride[]> {
     return this.http.get<Ride[]>(this.ridesURL).pipe(
       tap(data => console.log('Data fetched through get():' + JSON.stringify(data)))
-    )
+    );
   }
 
   addRide(ride: Ride): Observable<Ride> {
     return this.http.post<Ride>(this.ridesURL, ride, httpOptions).pipe(
       tap(data => console.log('Data fetched through post():' + JSON.stringify(data)))
-    )
+    );
   }
 
   deleteRide(id: number): Observable<Ride> {
-    const url = `${this.ridesURL}/${id}`
+    const url = `${this.ridesURL}/${id}`;
     return this.http.delete<Ride>(url, httpOptions).pipe(
       tap(data => console.log('Data fetched through delete():' + JSON.stringify(data)))
-    )
+    );
   }
 
   updateRide(ride: Ride, id: number): Observable<Ride> {
-    const url = `${this.ridesURL}/${this.id}`
+    console.log('ride ser', ride);
+    console.log('id ser', id);
+    const url = `${this.ridesURL}/${id}`;
+    console.log('url ser', url);
     return this.http.put<Ride>(url, ride, httpOptions).pipe(
       tap(data => console.log('Data fetched through put():' + JSON.stringify(data)))
-    )
+    );
   }
 
 }

@@ -82,7 +82,7 @@
             <td>{{ride.destination}}</td>
             <td>{{ride.seatsavailable}}</td>
             <td (click)="deleteRow(ride.id)">DELETE</td>
-            <td (click)="updateRow(ride.id)">UPDATE</td>
+            <td (click)="updateRow(rides, ride.id)">UPDATE</td>
           </tr>
         </table>
       </div>
