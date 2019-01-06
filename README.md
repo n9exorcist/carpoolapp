@@ -33,6 +33,11 @@ The data posted from the front end is saved in mongodb through mongoose[Mongoose
 ## Postman
 
 To check the HTTP methods, we use post man. Before having UI interface built, we can check the result using [Postman](https://web.postman.co/me/environments)
+Post - http://localhost:4000/api/register 
+
+## GitHib
+Pushing values to GitHub. 
+CMD ADMIN MODE -> ..\carpool-app> git add ., git commit -m "message", git push -u origin master
 
 ## Further help
 
