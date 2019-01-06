@@ -15,6 +15,8 @@ const routes: Routes = [
   { path: '', component: LoginComponent, pathMatch: 'full'}
 ];
 
+// Routes are nothing, but array of objects
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

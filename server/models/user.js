@@ -10,4 +10,4 @@ const userSchema = new Schema({
 })
 
 module.exports = mongoose.model('user', userSchema, 'rides')
-// 'rides' from db collection name 
+// 'rides' from db collection name

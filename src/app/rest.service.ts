@@ -15,7 +15,7 @@ const httpOptions = {
 export class RestService {
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
-    this.ridesURL = 'http://localhost:3000/posts';
+    this.ridesURL = 'http://localhost:4000/api/events';
    }
 
   private ridesURL;
