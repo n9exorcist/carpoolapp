@@ -16,7 +16,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   registerUser(user){
-    return this.http.post<any>(this._registerUrl, user, httpOptions).pipe(
+    return this.http.post<any>(this._registerUrl, user).pipe(
       tap(data => console.log('Data fetched through post():' + JSON.stringify(data)))
     );
   }

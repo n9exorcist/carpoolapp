@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'ride-details', component: RideDetailsComponent },
   { path: 'update-ride/:id', component: UpdateRideComponent },
   { path: 'update-ride', component: UpdateRideComponent },
-  { path: '', component: LoginComponent, pathMatch: 'full'}
+  { path: '', redirectTo:'/offer-ride', pathMatch: 'full'}
 ];
 
 // Routes are nothing, but array of objects

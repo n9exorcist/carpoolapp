@@ -23,19 +23,12 @@ export class OfferRideComponent implements OnInit {
   ngOnInit() {
     this.getRides();
 
-    // this._route.params.subscribe(params => {
-    //   this.id = +params['id'];
-    //   console.log("this.id", this.id);
-    // })
-
     this._route.paramMap.subscribe(params => {
       console.log(params.get('this.rides'));
-      this.id = params.get('this.ride.id');
+      this.id = parseInt(params.get('id'));
+      // this.id = params.get('this.ride.id');
       console.log('this.id', this.id);
     });
-
-    // this.id = this._route.snapshot.params.id;
-    // console.log("this.id", this.id);
 
     this._rest.getRides().subscribe(res => {
       this.rides = res;

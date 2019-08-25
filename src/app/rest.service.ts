@@ -15,10 +15,13 @@ const httpOptions = {
 export class RestService {
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
-    this.ridesURL = 'http://localhost:4000/api/events';
+    // this.ridesURL = 'http://localhost:4000/api/events';
+    this.ridesURL = ' http://localhost:3000/posts';
+    this.postesURL = 'http://localhost:4000/api/register';
    }
 
   private ridesURL;
+  private postesURL;
 
   rides: Ride[];
   id: number;
@@ -30,7 +33,7 @@ export class RestService {
   }
 
   addRide(ride: Ride): Observable<Ride> {
-    return this.http.post<Ride>(this.ridesURL, ride, httpOptions).pipe(
+    return this.http.post<Ride>(this.postesURL, ride, httpOptions).pipe(
       tap(data => console.log('Data fetched through post():' + JSON.stringify(data)))
     );
   }

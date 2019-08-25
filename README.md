@@ -24,7 +24,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Running server
 
-Run `node server` to start the server under server folder.[http://localhost:4000/](http://localhost:4000/)
+Run `node server` to start the server under 'server' folder.[http://localhost:4000/](http://localhost:4000/)
+
+Alternate running [JSON-Server](http://localhost:3000/, http://localhost:3000/posts)
 
 ## Mongoose
 

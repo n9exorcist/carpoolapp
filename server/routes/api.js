@@ -21,7 +21,7 @@ router.get('/events', (req, res) => {
     let events = [
         {
             "name": "Maria",
-            "startlocation": "Stockholm",
+            "startlocation": "Chennai",
             "destination": "Halmstad",
             "car": "Saab",
             "seatsavailable": 2,
@@ -29,7 +29,7 @@ router.get('/events', (req, res) => {
           },
           {
             "name": "Maria",
-            "startlocation": "Gothenberg",
+            "startlocation": "Hyderabad",
             "destination": "Halmstad",
             "car": "Saab",
             "seatsavailable": 2,
